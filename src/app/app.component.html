@@ -1,6 +1,6 @@
 <form [formGroup]="usersForm">
 
-  <select name="users" [formControl]="usersForm.controls.selectedUser">
+  <select name="users" [formControl]="usersForm.controls.selectedUser" title="Users">
     <option *ngFor="let item of users" [value]="item.id">{{ item.name }}</option>
   </select>
 
@@ -13,7 +13,7 @@
   </div>
 
   <h2>Posts</h2>
-  <select name="posts" [formControl]="usersForm.controls.selectedPost">
+  <select name="posts" [formControl]="usersForm.controls.selectedPost" title="Posts">
     <option *ngFor="let item of posts" [value]="item.id">
       {{ item.title }}
     </option>
